@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+A Modern and responsive dashboard to manage pharmacy sales orders and create listing based on uses access control.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
