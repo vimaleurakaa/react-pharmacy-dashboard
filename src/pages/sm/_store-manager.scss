@@ -1,0 +1,55 @@
+.add_inventory_btn {
+	margin-bottom: 1rem;
+	text-align: right;
+}
+
+.add_medicine {
+	& input {
+		// margin-bottom: 1rem;
+		padding: 0.4rem !important;
+	}
+}
+
+.med_login_card {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	width: 400px;
+	max-width: 440px;
+	max-height: 400px;
+	padding: 16px;
+	transform: translate(-50%, -45%);
+	box-shadow: 0 0 100px #00000014;
+
+	& input {
+		padding: 0.5rem 0 0.5rem 0.8rem !important;
+	}
+}
+
+.login-form-button {
+	width: 100%;
+}
+
+.inventory_loader {
+	text-align: center;
+	margin-top: 4rem;
+	& img {
+		width: 80px;
+		margin-bottom: 2rem;
+	}
+}
+
+.inventory_edit_icons {
+	color: #1890ff;
+	margin-left: 0.5rem;
+
+	& .anticon-form {
+		margin-right: 1.5rem;
+	}
+	& svg {
+		font-size: 1.2rem;
+	}
+	.delete_icon {
+		color: #e64343;
+	}
+}

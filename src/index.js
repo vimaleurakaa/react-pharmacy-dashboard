@@ -1,11 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import 'antd/dist/antd.css';
 import './index.scss';
 import App from './routes';
+import { Provider } from 'react-redux';
+import { ReactReduxFirebaseProvider } from 'react-redux-firebase';
+import { store, rrfProps, persistor } from './store/store';
+import { PersistGate } from 'redux-persist/integration/react';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<App />
+		<Provider store={store}>
+			<ReactReduxFirebaseProvider {...rrfProps}>
+				<PersistGate persistor={persistor}>
+					<App />
+				</PersistGate>
+			</ReactReduxFirebaseProvider>
+		</Provider>
 	</React.StrictMode>,
 	document.getElementById('root')
 );
